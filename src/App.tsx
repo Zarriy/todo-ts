@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="todo-body">
       <NewTodo onAdd={updateTodo} />
       <Todos todolist={todo} />
     </div>

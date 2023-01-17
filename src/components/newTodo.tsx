@@ -15,8 +15,9 @@ const NewTodo: React.FC<{ onAdd: (value: string) => void }> = (props) => {
   };
 
   return (
-    <form onSubmit={submissionHandler}>
+    <form onSubmit={submissionHandler} className="formElement">
       <label htmlFor="text">Type what you want to achieve today</label>
+
       <input type="text" id="text" ref={inputRef} />
       <button>Add</button>
     </form>
