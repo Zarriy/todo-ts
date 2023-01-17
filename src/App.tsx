@@ -8,13 +8,19 @@ function App() {
 
   const updateTodo = (value: string) => {
     const newTodo = new TodosCreate(value);
-    setTodo((prev) => prev.concat(newTodo));
+    setTodo((prev) => [newTodo, ...prev]);
+  };
+
+  const removalHandler = (id: string) => {
+    setTodo((prev) => prev.filter((item) => item.id !== id));
   };
 
   return (
     <div className="todo-body">
       <NewTodo onAdd={updateTodo} />
-      <Todos todolist={todo} />
+
+      <Todos todolist={todo} removeTodo={removalHandler} />
+      {todo.length > 0 && <p>Click on the item to delete</p>}
     </div>
   );
 }

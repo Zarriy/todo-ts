@@ -1,27 +1,15 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
 .todo-body {
   background-color: #343e6e30;
   max-width: 700px;
   margin: 10px auto;
-  padding: 10px 60px;
+  padding: 30px 60px;
   border-radius: 11px;
   box-shadow: 0 4px 8px 0px #ffffff05;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+p {
+  margin: 10px;
 }
 .formElement {
   display: flex;
@@ -50,22 +38,26 @@
   max-width: 14%;
   font-size: 16px;
   padding: 6px 12px;
-  background-color: #a3a6d4ed;
+  background-color: #7188f0;
   border: none;
   border-radius: 2px;
   cursor: pointer;
-  color: #000000;
-  margin: 20px auto 0 auto;
+  color: #ffffff;
 }
 .formElement button:hover {
   background-color: #a3a6d4;
 }
 .todoItems {
   list-style: none;
+  padding: 0;
 }
 .todoItem {
-  background-color: #7188f0;
+  background-color: #ffffff99;
+  border-radius: 6px;
   margin-bottom: 10px;
   padding: 14px;
   cursor: pointer;
+}
+.todoItem:hover {
+  background-color: #8ea1f1;
 }
